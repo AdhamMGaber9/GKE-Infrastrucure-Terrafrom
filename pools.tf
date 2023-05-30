@@ -38,14 +38,15 @@ resource "google_container_node_pool" "spot" {
   }
 
   autoscaling {
-    min_node_count = 0
+    min_node_count = 1
     max_node_count = 5
   }
 
   node_config {
     preemptible  = true
-    machine_type = "e2-small"
+    machine_type = "e2-medium"
     disk_size_gb = 30
+    image_type = "UBUNTU_CONTAINERD"
     labels = {
       team = "devops"
     }
