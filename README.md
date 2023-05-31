@@ -23,7 +23,7 @@ terraform apply
 ```
 ### Get to the Jenkins directory 
 ```
-cd ../Jekins
+cd ../jenkins
 ```
 ### Start by applying the yaml files
 - Create `namespace` to isolate the components.
